@@ -1,0 +1,29 @@
+<h1>POST Request Received</h1>
+
+<h3>Table for Query Parameters</h3>
+<table style="border: 0.5px solid black; border-collapse: collapse">
+    <tr>
+        <th style="border: 0.5px solid black;">Key</th>
+        <th style="border: 0.5px solid black;">Value</th>
+    </tr>
+    {{#each queryTable}}
+    <tr>
+        <td style="border: 0.5px solid black;">{{key}}</td>
+        <td style="border: 0.5px solid black;">{{value}}</td>
+    </tr>
+    {{/each}}
+</table><br>
+
+<h3>Table for Body Parameters</h3> 
+<table style="border: 0.5px solid black; border-collapse: collapse">
+    <tr>
+        <th style="border: 0.5px solid black;">Key</th>
+        <th style="border: 0.5px solid black;">Value</th>
+    </tr>
+    {{#each bodyTable}}
+    <tr>
+        <td style="border: 0.5px solid black;">{{key}}</td>
+        <td style="border: 0.5px solid black;">{{value}}</td>
+    </tr>
+    {{/each}}
+</table>
